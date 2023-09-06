@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+body,html{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-image: url(https://images.unsplash.com/photo-1439923274069-a6f070db0c99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60
+    );
+    background-position: center;
+    background-size: cover;
+}
+#center{
+    height: 80%;
+    width: 65%;
+    /* background-color: aqua; */
+    display: flex;    
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-image: url(https://images.unsplash.com/photo-1439923274069-a6f070db0c99?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8YmFja2dyb3VuZHN8ZW58MHx8MHx8fDA%3D&auto=format&fit=crop&w=600&q=60);
+    
+    background-position: center;
+    background-size: cover;
+    color: white;
+    border-radius: 40px;
+    
+}
+#center h1{
+    padding-bottom: 40px;
+    word-spacing: 10px;
+}
+#text{
+    position: relative;
+}
+#text i{
+    position: absolute;
+    right:1%;
+}
+#email{
+    position: relative;
+}
+#email i{
+    position: absolute;
+    right:0%;
+}
+#password{
+    position: relative;
+}
+#password i{
+    position: absolute;
+    right:0%;
+}
+#cpassword{
+    position: relative;
+}
+#cpassword i{
+    position: absolute;
+    right:0%;
+}
+
+/* #form{
+    padding-bottom: 2px; 
+} */
+.formContent{
+    
+    margin-bottom: 10px;
+    width: 300px;
+    background-color: transparent;
+    color: white;
+    border: none;
+    outline: none;
+    border-bottom: solid;    
+    border-color: white;
+}
+.formContent::placeholder{
+    color: rgba(255, 255, 255, 0.754);
+    font-size: 10px;
+}
+#form label{
+    font-size: 13px;
+    
+}
+
+
+#button{
+    /* background-color: red; */
+    margin-top: 10px;
+    margin-bottom: 7px;
+    width: 300px;
+    color: black;
+    padding: 2px 0px;
+}
+#separate{
+    margin-bottom: 7px;
+    color: white;
+    font-size: 12px;
+}
+#icon a{
+    margin-bottom: 10px;
+    color: white;  
+    text-decoration: none;
+    
+}
+#center p{
+    color: white;
+    font-size: 10px;
+    word-spacing: 2px;
+    margin-top: 20px;
+}

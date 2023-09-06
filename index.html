@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js" integrity="sha512-16esztaSRplJROstbIIdwX3N97V1+pZvV33ABoG1H2OyTttBxEGkTsoIVsiP1iaTtM8b3+hu2kB6pQ4Clr5yug==" crossorigin="anonymous" referrerpolicy="no-referrer"></script> -->
+    <!-- <script src="script.js"></script> -->
+    <title>Login</title>
+</head>
+<body>
+    <div id="main">
+        <div id="center">
+            <h1>OFFICIAL SIGNUP FORM</h1>
+            <div id="form">
+                <form action="#" onsubmit=" return buttonClicked()">
+                    <div id="text">
+                        <i class="ri-user-line formIcon"></i>
+                    <input type="text" id="text" id="names"  class="formContent" placeholder="First name" required >
+                </div><br>
+                <div id="email">
+                    <i class="ri-mail-fill formIcon"></i>
+                    <input type="email" class="formContent" id="emails" placeholder="Email" required>
+                </div><br>
+                <div id="password">
+                    <i class="ri-lock-fill formIcon"></i>
+                    <input type="password" id="passwords"  class="formContent" placeholder="Password" required>
+                </div><br>
+                <div id="cpassword">
+                    <i class="ri-lock-fill formIcon"></i>
+                    <input type="password" id="cpasswords" class="formContent" placeholder="Confirm password" required></div><br>
+                    <input type="checkbox" required><label for="checkbox"> I agree to the terms</label><br> 
+                    <input type="submit" value="Register" id="button" onclick="buttonClicked()" >               
+                </form>
+            
+            </div>
+                <!-- <div id="button">
+                    <button onclick="buttonClicked">Register</button>                    
+                </div> -->
+                <h4 id="separate">or</h4>
+                <div id="icon">
+                <a href="https://www.instagram.com/" target="_blank"><i class="ri-instagram-line"></i></a>
+            <a href="https://web.facebook.com/" target="_blank"><i class="ri-facebook-circle-fill"></i></a>
+                <a href="https://twitter.com/" target="_blank"> <i class="ri-twitter-fill"></i></a>
+                   
+                </div>
+                <p>2023 classy Login Form. All rights reserved | Design by Ibrahim Khan</p>
+            
+        </div>
+
+    </div>
+    <script>
+    function buttonClicked(){
+    var name  = document.getElementById("names").value;
+    var email  = document.getElementById("emails").value;
+    var password  = document.getElementById("passwords").value;
+    var cpassword = document.getElementById("cpasswords").value;
+    if(password != cpassword)
+    {
+        alert("Your password doesn't match with confirm password");
+        return false;
+    }
+    return true;
+}
+    </script>
+</body>
+</html>
